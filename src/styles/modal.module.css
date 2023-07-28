@@ -1,0 +1,25 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.modal-form form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.5rem;
+}
+
+.modal-form form div {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.modal-form form input {
+	padding: 0.5rem;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}

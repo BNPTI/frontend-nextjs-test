@@ -1,0 +1,73 @@
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wrapper [data-modal-container] {
+	display: flex;
+	width: 750px;
+	flex-direction: column;
+	background-color: #ffffff;
+	border-radius: 8px;
+}
+
+.wrapper [data-modal-container] [data-modal-header] {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper [data-modal-container] [data-modal-header] [data-modal-close] {
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
+	font-size: 1.25rem;
+	font-weight: bold;
+}
+
+.wrapper [data-modal-container] [data-modal-header],
+.wrapper [data-modal-container] [data-modal-footer] {
+	padding: 1rem 1.5rem;
+}
+
+.wrapper [data-modal-container] [data-modal-header] h2 {
+	margin: 0;
+}
+
+.wrapper [data-modal-container] [data-modal-content] {
+	padding: 1.5rem;
+}
+
+.wrapper [data-modal-container] [data-modal-footer] {
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+.wrapper [data-modal-container] [data-modal-footer] button {
+	padding: 0.5rem 1.5rem;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: filter 0.2s ease-in-out;
+}
+
+.wrapper [data-modal-container] [data-modal-footer] button:hover {
+	filter: brightness(1.1);
+}
+
+.wrapper [data-modal-container] [data-modal-footer] button[data-type='confirm'] {
+	background-color: #4caf50;
+	color: #ffffff;
+	border: none;
+}

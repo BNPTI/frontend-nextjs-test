@@ -1,0 +1,19 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	height: 100%;
+	gap: 1rem;
+}
+
+.toast-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 10;
+	padding: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
