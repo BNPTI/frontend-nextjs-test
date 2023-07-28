@@ -27,6 +27,10 @@ export default function Home() {
 				<li>
 					<a href="/pagina-estatica">Pagina estática</a>
 				</li>
+
+				<li>
+					<a href="/ciclo-de-vida">Ciclo de vida de componente</a>
+				</li>
 			</ul>
 		</div>
 	);
